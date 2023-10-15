@@ -1,0 +1,50 @@
+:root {
+    --verde: #00db90;
+    --azul: #008cdb;
+    --roxo: #a000db;
+    --amarelo: #dbb900;
+}
+.h-100vh {
+    height: 100vh;
+}
+
+.bg-grad-anim {
+    background: linear-gradient(245deg, var(--verde), var(--azul), var(--roxo), var(--amarelo));
+    background-size: 800% 800%;
+
+    -webkit-animation: gradientAnim 59s ease infinite;
+    -moz-animation: gradientAnim 59s ease infinite;
+    animation: gradientAnim 59s ease infinite;
+}
+
+@-webkit-keyframes gradientAnim {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@-moz-keyframes gradientAnim {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+@keyframes gradientAnim {
+    0%{background-position:0% 30%}
+    50%{background-position:100% 71%}
+    100%{background-position:0% 30%}
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+.btn-rounded {
+    border-radius: 50px;
+}
